@@ -10,18 +10,19 @@ class Finch():
         self.connection = finchconnection.ThreadedFinchConnection()
         self.connection.open()
 
+
+    def go(self):
+        """this is where instructions for the finch robot will go"""
+
+
+
+
+
     
-finch = Finch()
+def main():
+    finch = Finch()
+    finch.go()
+    finch.halt()
+    finch.close()
 
-
-
-
-
-
-
-
-
-
-
-finch.halt()
-finch.close()
+main()
